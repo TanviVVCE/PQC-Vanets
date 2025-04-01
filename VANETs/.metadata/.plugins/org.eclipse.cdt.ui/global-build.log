@@ -1,0 +1,365 @@
+16:49:30 **** Build of configuration gcc-debug for project veins ****
+make MODE=debug -j9 all 
+make[1]: Entering directory '/Users/tanvipatil/Desktop/TERM-1/VANETs/veins/veins/src'
+MSGC: veins/common.msg
+MSGC: veins/base/messages/AirFrame.msg
+MSGC: veins/base/messages/MacPkt.msg
+MSGC: veins/base/messages/BorderMsg.msg
+MSGC: veins/base/toolbox/Signal.msg
+MSGC: veins/base/utils/Coord.msg
+MSGC: veins/base/utils/POA.msg
+MSGC: veins/base/utils/SimpleAddress.msg
+MSGC: veins/modules/application/traci/TraCIDemo11pMessage.msg
+MSGC: veins/modules/messages/AirFrame11p.msg
+MSGC: veins/modules/messages/AckTimeOutMessage.msg
+MSGC: veins/modules/messages/BaseFrame1609_4.msg
+MSGC: veins/modules/messages/DemoSafetyMessage.msg
+MSGC: veins/modules/messages/DemoServiceAdvertisement.msg
+MSGC: veins/modules/messages/Mac80211Ack.msg
+MSGC: veins/modules/messages/Mac80211Pkt.msg
+MSGC: veins/modules/messages/PhyControlMessage.msg
+MSGC: veins/modules/messages/TraCITrafficLightMessage.msg
+veins/base/connectionManager/NicEntryDebug.cc
+veins/base/connectionManager/BaseConnectionManager.cc
+veins/base/connectionManager/ConnectionManager.cc
+veins/base/connectionManager/ChannelAccess.cc
+veins/base/connectionManager/NicEntryDirect.cc
+veins/base/modules/BaseApplLayer.cc
+veins/base/modules/BaseLayer.cc
+veins/base/modules/BaseBattery.cc
+veins/base/modules/BaseMacLayer.cc
+veins/base/connectionManager/NicEntryDebug.cc:80:5: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+   80 |     sprintf(gateName, pattern, nicId, i);
+      |     ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_stdio.h:274:1: note: 'sprintf' has been explicitly marked deprecated here
+  274 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:218:48: note: expanded from macro '__deprecated_msg'
+  218 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+veins/base/connectionManager/NicEntryDebug.cc:90:9: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+   90 |         sprintf(gateName, pattern, nicId, i);
+      |         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_stdio.h:274:1: note: 'sprintf' has been explicitly marked deprecated here
+  274 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:218:48: note: expanded from macro '__deprecated_msg'
+  218 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+veins/base/connectionManager/NicEntryDebug.cc:127:9: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+  127 |         sprintf(gateName, "in%d-%d", nicId, inCnt);
+      |         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_stdio.h:274:1: note: 'sprintf' has been explicitly marked deprecated here
+  274 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:218:48: note: expanded from macro '__deprecated_msg'
+  218 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+veins/base/connectionManager/NicEntryDebug.cc:182:9: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+  182 |         sprintf(gateName, "out%d-%d", nicId, outCnt);
+      |         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_stdio.h:274:1: note: 'sprintf' has been explicitly marked deprecated here
+  274 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:218:48: note: expanded from macro '__deprecated_msg'
+  218 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+veins/base/modules/BaseMobility.cc
+veins/base/modules/BaseModule.cc
+veins/base/modules/BaseWorldUtility.cc
+veins/base/modules/BatteryAccess.cc
+veins/base/phyLayer/Antenna.cc
+4 warnings generated.
+veins/base/phyLayer/BaseDecider.cc
+veins/base/phyLayer/BasePhyLayer.cc
+veins/base/phyLayer/ChannelInfo.cc
+veins/base/phyLayer/Decider.cc
+veins/base/phyLayer/PhyUtils.cc
+veins/base/toolbox/Signal.cc
+veins/base/toolbox/SignalUtils.cc
+veins/base/toolbox/Spectrum.cc
+veins/base/utils/Coord.cc
+veins/base/utils/Heading.cc
+veins/base/utils/NedFunctions.cc
+veins/base/utils/NetwToMacControlInfo.cc
+veins/base/utils/SimpleAddress.cc
+veins/base/utils/winsupport.cc
+veins/modules/analogueModel/BreakpointPathlossModel.cc
+veins/modules/analogueModel/NakagamiFading.cc
+veins/modules/analogueModel/PERModel.cc
+veins/modules/analogueModel/SimpleObstacleShadowing.cc
+veins/modules/analogueModel/SimplePathlossModel.cc
+veins/modules/analogueModel/TwoRayInterferenceModel.cc
+veins/modules/analogueModel/VehicleObstacleShadowing.cc
+veins/modules/application/ieee80211p/DemoBaseApplLayer.cc
+veins/modules/application/traci/MyVeinsApp.cc
+veins/modules/application/traci/TraCIDemo11p.cc
+veins/modules/application/traci/TraCIDemoRSU11p.cc
+veins/modules/application/traci/TraCIDemoTrafficLightApp.cc
+veins/modules/mac/ieee80211p/Mac1609_4.cc
+veins/modules/mobility/LinearMobility.cc
+veins/modules/mobility/traci/TraCIBuffer.cc
+veins/modules/mobility/traci/TraCIColor.cc
+veins/modules/mobility/traci/TraCICommandInterface.cc
+veins/modules/mobility/traci/TraCIConnection.cc
+veins/modules/mobility/traci/TraCICoordinateTransformation.cc
+veins/modules/mobility/traci/TraCILauncher.cc
+veins/modules/mobility/traci/TraCIMobility.cc
+veins/modules/mobility/traci/TraCIRegionOfInterest.cc
+veins/modules/mobility/traci/TraCIScenarioManager.cc
+veins/modules/mobility/traci/TraCIScenarioManagerForker.cc
+veins/modules/mobility/traci/TraCIScenarioManagerLaunchd.cc
+veins/modules/mobility/traci/TraCIScreenRecorder.cc
+veins/modules/mobility/traci/TraCIVehicleInserter.cc
+veins/modules/obstacle/MobileHostObstacle.cc
+veins/modules/obstacle/Obstacle.cc
+veins/modules/obstacle/ObstacleControl.cc
+veins/modules/obstacle/VehicleObstacleControl.cc
+veins/modules/phy/Decider80211p.cc
+veins/modules/phy/NistErrorRate.cc
+veins/modules/phy/PhyLayer80211p.cc
+veins/modules/phy/SampledAntenna1D.cc
+veins/modules/utility/BBoxLookup.cc
+veins/modules/utility/HasLogProxy.cc
+veins/modules/utility/TimerManager.cc
+veins/modules/world/annotations/AnnotationDummy.cc
+veins/modules/world/annotations/AnnotationManager.cc
+veins/modules/world/traci/trafficLight/TraCITrafficLightInterface.cc
+veins/modules/world/traci/trafficLight/TraCITrafficLightProgram.cc
+veins/modules/world/traci/trafficLight/logics/TraCITrafficLightAbstractLogic.cc
+veins/modules/world/traci/trafficLight/logics/TraCITrafficLightSimpleLogic.cc
+veins/visualizer/roads/RoadsCanvasVisualizer.cc
+veins/visualizer/roads/RoadsOsgVisualizer.cc
+veins/common_m.cc
+veins/base/messages/AirFrame_m.cc
+veins/base/messages/BorderMsg_m.cc
+veins/base/messages/MacPkt_m.cc
+veins/base/toolbox/Signal_m.cc
+veins/base/utils/Coord_m.cc
+In file included from veins/visualizer/roads/RoadsOsgVisualizer.cc:26:
+In file included from /opt/homebrew/include/osg/Geode:17:
+In file included from /opt/homebrew/include/osg/Node:19:
+In file included from /opt/homebrew/include/osg/StateSet:18:
+In file included from /opt/homebrew/include/osg/StateAttribute:20:
+In file included from /opt/homebrew/include/osg/Shader:25:
+In file included from /opt/homebrew/include/osg/GLExtensions:18:
+In file included from /opt/homebrew/include/osg/GLDefines:25:
+/opt/homebrew/include/osg/GL:133:50: warning: 'glLoadMatrixf' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated. (Define GL_SILENCE_DEPRECATION to silence these warnings) [-Wdeprecated-declarations]
+  133 |     inline void glLoadMatrix(const float* mat) { glLoadMatrixf(static_cast<const GLfloat*>(mat)); }
+      |                                                  ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h:2573:13: note: 'glLoadMatrixf' has been explicitly marked deprecated here
+ 2573 | extern void glLoadMatrixf (const GLfloat *m) OPENGL_DEPRECATED(10.0, 10.14);
+      |             ^
+In file included from veins/visualizer/roads/RoadsOsgVisualizer.cc:26:
+In file included from /opt/homebrew/include/osg/Geode:17:
+In file included from /opt/homebrew/include/osg/Node:19:
+In file included from /opt/homebrew/include/osg/StateSet:18:
+In file included from /opt/homebrew/include/osg/StateAttribute:20:
+In file included from /opt/homebrew/include/osg/Shader:25:
+In file included from /opt/homebrew/include/osg/GLExtensions:18:
+In file included from /opt/homebrew/include/osg/GLDefines:25:
+/opt/homebrew/include/osg/GL:134:50: warning: 'glMultMatrixf' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated. (Define GL_SILENCE_DEPRECATION to silence these warnings) [-Wdeprecated-declarations]
+  134 |     inline void glMultMatrix(const float* mat) { glMultMatrixf(static_cast<const GLfloat*>(mat)); }
+      |                                                  ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h:2591:13: note: 'glMultMatrixf' has been explicitly marked deprecated here
+ 2591 | extern void glMultMatrixf (const GLfloat *m) OPENGL_DEPRECATED(10.0, 10.14);
+      |             ^
+In file included from veins/visualizer/roads/RoadsOsgVisualizer.cc:26:
+In file included from /opt/homebrew/include/osg/Geode:17:
+In file included from /opt/homebrew/include/osg/Node:19:
+In file included from /opt/homebrew/include/osg/StateSet:18:
+In file included from /opt/homebrew/include/osg/StateAttribute:20:
+In file included from /opt/homebrew/include/osg/Shader:25:
+In file included from /opt/homebrew/include/osg/GLExtensions:18:
+In file included from /opt/homebrew/include/osg/GLDefines:25:
+/opt/homebrew/include/osg/GL:152:55: warning: 'glLoadMatrixd' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated. (Define GL_SILENCE_DEPRECATION to silence these warnings) [-Wdeprecated-declarations]
+  152 |         inline void glLoadMatrix(const double* mat) { glLoadMatrixd(static_cast<const GLdouble*>(mat)); }
+      |                                                       ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h:2572:13: note: 'glLoadMatrixd' has been explicitly marked deprecated here
+ 2572 | extern void glLoadMatrixd (const GLdouble *m) OPENGL_DEPRECATED(10.0, 10.14);
+      |             ^
+In file included from veins/visualizer/roads/RoadsOsgVisualizer.cc:26:
+In file included from /opt/homebrew/include/osg/Geode:17:
+In file included from /opt/homebrew/include/osg/Node:19:
+In file included from /opt/homebrew/include/osg/StateSet:18:
+In file included from /opt/homebrew/include/osg/StateAttribute:20:
+In file included from /opt/homebrew/include/osg/Shader:25:
+In file included from /opt/homebrew/include/osg/GLExtensions:18:
+In file included from /opt/homebrew/include/osg/GLDefines:25:
+/opt/homebrew/include/osg/GL:153:55: warning: 'glMultMatrixd' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated. (Define GL_SILENCE_DEPRECATION to silence these warnings) [-Wdeprecated-declarations]
+  153 |         inline void glMultMatrix(const double* mat) { glMultMatrixd(static_cast<const GLdouble*>(mat)); }
+      |                                                       ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h:2590:13: note: 'glMultMatrixd' has been explicitly marked deprecated here
+ 2590 | extern void glMultMatrixd (const GLdouble *m) OPENGL_DEPRECATED(10.0, 10.14);
+      |             ^
+veins/base/utils/POA_m.cc
+In file included from veins/visualizer/roads/RoadsOsgVisualizer.cc:26:
+In file included from /opt/homebrew/include/osg/Geode:19:
+In file included from /opt/homebrew/include/osg/Drawable:18:
+In file included from /opt/homebrew/include/osg/Shape:20:
+/opt/homebrew/include/osg/Plane:244:17: warning: variable 'noOn' set but not used [-Wunused-but-set-variable]
+  244 |             int noOn = 0;
+      |                 ^
+/opt/homebrew/include/osg/Plane:273:17: warning: variable 'noOn' set but not used [-Wunused-but-set-variable]
+  273 |             int noOn = 0;
+      |                 ^
+In file included from veins/visualizer/roads/RoadsOsgVisualizer.cc:26:
+In file included from /opt/homebrew/include/osg/Geode:19:
+In file included from /opt/homebrew/include/osg/Drawable:21:
+In file included from /opt/homebrew/include/osg/RenderInfo:17:
+/opt/homebrew/include/osg/State:651:18: warning: 'glDrawArrays' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated. (Define GL_SILENCE_DEPRECATION to silence these warnings) [-Wdeprecated-declarations]
+  651 |             else glDrawArrays(mode, first, count);
+      |                  ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h:2464:13: note: 'glDrawArrays' has been explicitly marked deprecated here
+ 2464 | extern void glDrawArrays (GLenum mode, GLint first, GLsizei count) OPENGL_DEPRECATED(10.0, 10.14);
+      |             ^
+In file included from veins/visualizer/roads/RoadsOsgVisualizer.cc:26:
+In file included from /opt/homebrew/include/osg/Geode:19:
+In file included from /opt/homebrew/include/osg/Drawable:21:
+In file included from /opt/homebrew/include/osg/RenderInfo:17:
+/opt/homebrew/include/osg/State:657:18: warning: 'glDrawElements' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated. (Define GL_SILENCE_DEPRECATION to silence these warnings) [-Wdeprecated-declarations]
+  657 |             else glDrawElements(mode, count, type, indices);
+      |                  ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h:2466:13: note: 'glDrawElements' has been explicitly marked deprecated here
+ 2466 | extern void glDrawElements (GLenum mode, GLsizei count, GLenum type, const GLvoid *indices) OPENGL_DEPRECATED(10.0, 10.14);
+      |             ^
+In file included from veins/visualizer/roads/RoadsOsgVisualizer.cc:26:
+In file included from /opt/homebrew/include/osg/Geode:19:
+In file included from /opt/homebrew/include/osg/Drawable:21:
+In file included from /opt/homebrew/include/osg/RenderInfo:17:
+/opt/homebrew/include/osg/State:665:18: warning: 'glVertex4f' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated. (Define GL_SILENCE_DEPRECATION to silence these warnings) [-Wdeprecated-declarations]
+  665 |             else glVertex4f(x,y,z,w);
+      |                  ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h:2748:13: note: 'glVertex4f' has been explicitly marked deprecated here
+ 2748 | extern void glVertex4f (GLfloat x, GLfloat y, GLfloat z, GLfloat w) OPENGL_DEPRECATED(10.0, 10.14);
+      |             ^
+In file included from veins/visualizer/roads/RoadsOsgVisualizer.cc:26:
+In file included from /opt/homebrew/include/osg/Geode:19:
+In file included from /opt/homebrew/include/osg/Drawable:21:
+In file included from /opt/homebrew/include/osg/RenderInfo:17:
+/opt/homebrew/include/osg/State:675:18: warning: 'glColor4f' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated. (Define GL_SILENCE_DEPRECATION to silence these warnings) [-Wdeprecated-declarations]
+  675 |             else glColor4f(r,g,b,a);
+      |                  ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h:2421:13: note: 'glColor4f' has been explicitly marked deprecated here
+ 2421 | extern void glColor4f (GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha) OPENGL_DEPRECATED(10.0, 10.14);
+      |             ^
+In file included from veins/visualizer/roads/RoadsOsgVisualizer.cc:26:
+In file included from /opt/homebrew/include/osg/Geode:19:
+In file included from /opt/homebrew/include/osg/Drawable:21:
+In file included from /opt/homebrew/include/osg/RenderInfo:17:
+/opt/homebrew/include/osg/State:685:18: warning: 'glNormal3f' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated. (Define GL_SILENCE_DEPRECATION to silence these warnings) [-Wdeprecated-declarations]
+  685 |             else glNormal3f(x,y,z);
+      |                  ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h:2597:13: note: 'glNormal3f' has been explicitly marked deprecated here
+ 2597 | extern void glNormal3f (GLfloat nx, GLfloat ny, GLfloat nz) OPENGL_DEPRECATED(10.0, 10.14);
+      |             ^
+In file included from veins/visualizer/roads/RoadsOsgVisualizer.cc:26:
+In file included from /opt/homebrew/include/osg/Geode:19:
+In file included from /opt/homebrew/include/osg/Drawable:21:
+In file included from /opt/homebrew/include/osg/RenderInfo:17:
+/opt/homebrew/include/osg/State:696:22: warning: 'glTexCoord4f' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated. (Define GL_SILENCE_DEPRECATION to silence these warnings) [-Wdeprecated-declarations]
+  696 |                 else glTexCoord4f(x,y,z,w);
+      |                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h:2701:13: note: 'glTexCoord4f' has been explicitly marked deprecated here
+ 2701 | extern void glTexCoord4f (GLfloat s, GLfloat t, GLfloat r, GLfloat q) OPENGL_DEPRECATED(10.0, 10.14);
+      |             ^
+In file included from veins/visualizer/roads/RoadsOsgVisualizer.cc:26:
+In file included from /opt/homebrew/include/osg/Geode:19:
+In file included from /opt/homebrew/include/osg/Drawable:21:
+In file included from /opt/homebrew/include/osg/RenderInfo:17:
+/opt/homebrew/include/osg/State:1149:30: warning: 'glEnable' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated. (Define GL_SILENCE_DEPRECATION to silence these warnings) [-Wdeprecated-declarations]
+ 1149 |                 if (enabled) glEnable(mode);
+      |                              ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h:2472:13: note: 'glEnable' has been explicitly marked deprecated here
+ 2472 | extern void glEnable (GLenum cap) OPENGL_DEPRECATED(10.0, 10.14);
+      |             ^
+In file included from veins/visualizer/roads/RoadsOsgVisualizer.cc:26:
+In file included from /opt/homebrew/include/osg/Geode:19:
+In file included from /opt/homebrew/include/osg/Drawable:21:
+In file included from /opt/homebrew/include/osg/RenderInfo:17:
+/opt/homebrew/include/osg/State:1150:22: warning: 'glDisable' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated. (Define GL_SILENCE_DEPRECATION to silence these warnings) [-Wdeprecated-declarations]
+ 1150 |                 else glDisable(mode);
+      |                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h:2462:13: note: 'glDisable' has been explicitly marked deprecated here
+ 2462 | extern void glDisable (GLenum cap) OPENGL_DEPRECATED(10.0, 10.14);
+      |             ^
+In file included from veins/visualizer/roads/RoadsOsgVisualizer.cc:26:
+In file included from /opt/homebrew/include/osg/Geode:19:
+In file included from /opt/homebrew/include/osg/Drawable:21:
+In file included from /opt/homebrew/include/osg/RenderInfo:17:
+/opt/homebrew/include/osg/State:1168:34: warning: 'glEnable' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated. (Define GL_SILENCE_DEPRECATION to silence these warnings) [-Wdeprecated-declarations]
+veins/base/utils/SimpleAddress_m.cc
+ 1168 |                     if (enabled) glEnable(mode);
+      |                                  ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h:2472:13: note: 'glEnable' has been explicitly marked deprecated here
+ 2472 | extern void glEnable (GLenum cap) OPENGL_DEPRECATED(10.0, 10.14);
+      |             ^
+In file included from veins/visualizer/roads/RoadsOsgVisualizer.cc:26:
+In file included from /opt/homebrew/include/osg/Geode:19:
+In file included from /opt/homebrew/include/osg/Drawable:21:
+In file included from /opt/homebrew/include/osg/RenderInfo:17:
+/opt/homebrew/include/osg/State:1169:26: warning: 'glDisable' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated. (Define GL_SILENCE_DEPRECATION to silence these warnings) [-Wdeprecated-declarations]
+ 1169 |                     else glDisable(mode);
+      |                          ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h:2462:13: note: 'glDisable' has been explicitly marked deprecated here
+ 2462 | extern void glDisable (GLenum cap) OPENGL_DEPRECATED(10.0, 10.14);
+      |             ^
+In file included from veins/visualizer/roads/RoadsOsgVisualizer.cc:26:
+In file included from /opt/homebrew/include/osg/Geode:19:
+In file included from /opt/homebrew/include/osg/Drawable:21:
+In file included from /opt/homebrew/include/osg/RenderInfo:18:
+In file included from /opt/homebrew/include/osg/View:17:
+/opt/homebrew/include/osg/Camera:604:25: warning: 'osg::Camera::DrawCallback::run' hides overloaded virtual function [-Woverloaded-virtual]
+  604 |             inline void run(osg::RenderInfo& renderInfo) const
+      |                         ^
+/opt/homebrew/include/osg/Callback:80:22: note: hidden overloaded virtual function 'osg::Callback::run' declared here: different number of parameters (2 vs 1)
+   80 |         virtual bool run(osg::Object* object, osg::Object* data)
+      |                      ^
+In file included from veins/visualizer/roads/RoadsOsgVisualizer.cc:26:
+In file included from /opt/homebrew/include/osg/Geode:19:
+/opt/homebrew/include/osg/Drawable:600:13: warning: 'glNewList' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated. (Define GL_SILENCE_DEPRECATION to silence these warnings) [-Wdeprecated-declarations]
+  600 |             glNewList( globj, GL_COMPILE );
+      |             ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h:2592:13: note: 'glNewList' has been explicitly marked deprecated here
+ 2592 | extern void glNewList (GLuint list, GLenum mode) OPENGL_DEPRECATED(10.0, 10.14);
+      |             ^
+In file included from veins/visualizer/roads/RoadsOsgVisualizer.cc:26:
+In file included from /opt/homebrew/include/osg/Geode:19:
+/opt/homebrew/include/osg/Drawable:604:13: warning: 'glEndList' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated. (Define GL_SILENCE_DEPRECATION to silence these warnings) [-Wdeprecated-declarations]
+  604 |             glEndList();
+      |             ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h:2475:13: note: 'glEndList' has been explicitly marked deprecated here
+ 2475 | extern void glEndList (void) OPENGL_DEPRECATED(10.0, 10.14);
+      |             ^
+In file included from veins/visualizer/roads/RoadsOsgVisualizer.cc:26:
+In file included from /opt/homebrew/include/osg/Geode:19:
+/opt/homebrew/include/osg/Drawable:608:9: warning: 'glCallList' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated. (Define GL_SILENCE_DEPRECATION to silence these warnings) [-Wdeprecated-declarations]
+  608 |         glCallList( globj);
+      |         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h:2392:13: note: 'glCallList' has been explicitly marked deprecated here
+ 2392 | extern void glCallList (GLuint list) OPENGL_DEPRECATED(10.0, 10.14);
+      |             ^
+veins/modules/application/traci/TraCIDemo11pMessage_m.cc
+veins/modules/messages/AckTimeOutMessage_m.cc
+veins/modules/messages/AirFrame11p_m.cc
+veins/modules/messages/BaseFrame1609_4_m.cc
+veins/modules/messages/DemoSafetyMessage_m.cc
+veins/modules/messages/DemoServiceAdvertisement_m.cc
+veins/modules/messages/Mac80211Ack_m.cc
+veins/modules/messages/Mac80211Pkt_m.cc
+veins/modules/messages/PhyControlMessage_m.cc
+veins/modules/messages/TraCITrafficLightMessage_m.cc
+20 warnings generated.
+Creating shared library: ../out/gcc-debug/src/libveins_dbg.dylib
+ld: warning: ignoring duplicate libraries: '-lc++'
+Makefile:214: warning: pattern recipe did not update peer target '../out/gcc-debug/src/libveins_dbg.dll.a'.
+Makefile:214: warning: pattern recipe did not update peer target '../out/gcc-debug/src/libveins_dbg.def'.
+make[1]: Leaving directory '/Users/tanvipatil/Desktop/TERM-1/VANETs/veins/veins/src'
+16:49:54 **** Incremental Build of configuration gcc-debug for project veins ****
+make MODE=debug -j9 all 
+make[1]: Entering directory '/Users/tanvipatil/Desktop/TERM-1/VANETs/veins/veins/src'
+Creating shared library: ../out/gcc-debug/src/libveins_dbg.dylib
+ld: warning: ignoring duplicate libraries: '-lc++'
+Makefile:214: warning: pattern recipe did not update peer target '../out/gcc-debug/src/libveins_dbg.dll.a'.
+Makefile:214: warning: pattern recipe did not update peer target '../out/gcc-debug/src/libveins_dbg.def'.
+make[1]: Leaving directory '/Users/tanvipatil/Desktop/TERM-1/VANETs/veins/veins/src'

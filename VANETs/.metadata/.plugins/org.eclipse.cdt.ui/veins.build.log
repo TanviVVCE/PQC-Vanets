@@ -1,0 +1,11 @@
+16:49:54 **** Incremental Build of configuration gcc-debug for project veins ****
+make MODE=debug -j9 all 
+make[1]: Entering directory '/Users/tanvipatil/Desktop/TERM-1/VANETs/veins/veins/src'
+Creating shared library: ../out/gcc-debug/src/libveins_dbg.dylib
+ld: warning: ignoring duplicate libraries: '-lc++'
+Makefile:214: warning: pattern recipe did not update peer target '../out/gcc-debug/src/libveins_dbg.dll.a'.
+Makefile:214: warning: pattern recipe did not update peer target '../out/gcc-debug/src/libveins_dbg.def'.
+make[1]: Leaving directory '/Users/tanvipatil/Desktop/TERM-1/VANETs/veins/veins/src'
+
+16:49:54 Build Finished. 0 errors, 3 warnings. (took 255ms)
+

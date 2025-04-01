@@ -1,55 +1,78 @@
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.28;
 
-contract SampleToken {
-
-    mapping(address => uint) private balances;
-    mapping(address => mapping(address => uint)) private allowances;
-
-    uint public totalSupply;
-    string public name;
-    string public symbol;
-    uint public decimals;
-
-    event Transfer(address indexed from, address indexed to, uint value);
-    event Approval(address indexed owner, address indexed spender, uint value);
-
-    constructor(string memory _name, string memory _sym, uint _dec, uint _ts) {
-        name = _name;
-        symbol = _sym;
-        decimals = _dec;
-        totalSupply = _ts * 10 ** _dec;
-        balances[msg.sender] = totalSupply;
+contract TrustContract {
+    // Struct to store vehicle information
+    struct Vehicle {
+        uint256 trustValue; // Trust value of the vehicle (0-10)
+        bool isRevoked;     // Security status (true if revoked)
     }
 
-    function allowance(address owner, address spender) external view returns (uint) {
-        return allowances[owner][spender];
+    // Mapping to store vehicles by their ID
+    mapping(string => Vehicle) public vehicles;
+
+    // Event to log trust value updates
+    event TrustValueUpdated(string vehicleId, uint256 newTrustValue);
+
+    // Set the initial trust value for a vehicle
+    function setTrustValue(string memory vehicleId, uint256 trustValue) public {
+        require(trustValue <= 10, "Trust value must be between 0 and 10");
+        vehicles[vehicleId] = Vehicle({
+            trustValue: trustValue,
+            isRevoked: false
+        });
     }
 
-    function balanceOf(address owner) external view returns (uint) {
-        return balances[owner];
+    // Update the trust value of a vehicle by an offset
+    function updateTrustValue(string memory vehicleId, int256 offset) public {
+        require(vehicles[vehicleId].trustValue != 0, "Vehicle does not exist");
+
+        uint256 newTrustValue;
+        if (offset > 0) {
+            newTrustValue = vehicles[vehicleId].trustValue + uint256(offset);
+        } else {
+            newTrustValue = vehicles[vehicleId].trustValue - uint256(-offset);
+        }
+
+        // Ensure trust value stays within bounds (0-10)
+        if (newTrustValue > 10) {
+            newTrustValue = 10;
+        } else if (newTrustValue < 0) {
+            newTrustValue = 0;
+        }
+
+        vehicles[vehicleId].trustValue = newTrustValue;
+        emit TrustValueUpdated(vehicleId, newTrustValue);
     }
-function transfer(address to, uint value) external returns (bool) {
-    require(balances[msg.sender] >= value, 'balance too low');
-    balances[to] += value;
-    balances[msg.sender] -= value;
-    emit Transfer(msg.sender, to, value);
-    return true;
-}
 
-function transferFrom(address from, address to, uint value) public returns (bool) {
-    require(balances[from] >= value, 'balance too low');
-    require(allowances[from][msg.sender] >= value, 'allowance too low');
-    balances[to] += value;
-    balances[from] -= value;
-    emit Transfer(from, to, value);
-    return true;
-}
+    // Query the trust value of a vehicle
+    function queryTrustValue(string memory vehicleId) public view returns (uint256) {
+        require(vehicles[vehicleId].trustValue != 0, "Vehicle does not exist");
+        return vehicles[vehicleId].trustValue;
+    }
 
-function approve(address spender, uint value) public returns (bool) {
-    allowances[msg.sender][spender] = value;
-    emit Approval(msg.sender, spender, value);
-    return true;
-}
+    // Classify a vehicle as high-priority, trusted, or untrusted
+    function classifyVehicle(string memory vehicleId) public view returns (string memory) {
+        require(vehicles[vehicleId].trustValue != 0, "Vehicle does not exist");
 
+        if (vehicles[vehicleId].trustValue >= 8) {
+            return "High-Priority";
+        } else if (vehicles[vehicleId].trustValue >= 5) {
+            return "Trusted";
+        } else {
+            return "Untrusted";
+        }
+    }
+
+    // Revoke a vehicle (set security status to revoked)
+    function revokeVehicle(string memory vehicleId) public {
+        require(vehicles[vehicleId].trustValue != 0, "Vehicle does not exist");
+        vehicles[vehicleId].isRevoked = true;
+    }
+
+    // Check if a vehicle is revoked
+    function isRevoked(string memory vehicleId) public view returns (bool) {
+        require(vehicles[vehicleId].trustValue != 0, "Vehicle does not exist");
+        return vehicles[vehicleId].isRevoked;
+    }
 }

@@ -1,0 +1,9 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=aarch64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=macosx
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:New_configuration,org.eclipse.launchbar.core.descriptorType.default\:veins
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:New_configuration/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:New_configuration/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:veins/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:veins/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

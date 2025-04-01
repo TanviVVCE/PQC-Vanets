@@ -1,0 +1,151 @@
+[
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "vehicleId",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "newTrustValue",
+				"type": "uint256"
+			}
+		],
+		"name": "TrustValueUpdated",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "vehicleId",
+				"type": "string"
+			}
+		],
+		"name": "classifyVehicle",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "vehicleId",
+				"type": "string"
+			}
+		],
+		"name": "isRevoked",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "vehicleId",
+				"type": "string"
+			}
+		],
+		"name": "queryTrustValue",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "vehicleId",
+				"type": "string"
+			}
+		],
+		"name": "revokeVehicle",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "vehicleId",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "trustValue",
+				"type": "uint256"
+			}
+		],
+		"name": "setTrustValue",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "vehicleId",
+				"type": "string"
+			},
+			{
+				"internalType": "int256",
+				"name": "offset",
+				"type": "int256"
+			}
+		],
+		"name": "updateTrustValue",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "vehicles",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "trustValue",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "isRevoked",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

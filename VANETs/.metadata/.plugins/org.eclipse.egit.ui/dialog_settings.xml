@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel" value="0"/>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/sommer/veins.git"/>
+		<item value="https://github.com/sommer/veins"/>
+		<item value="https://github.com/sommer/veins/tree/master/examples/veins"/>
+		<item value="https://github.com/inet-framework/inet.git"/>
+	</list>
+	<list key="EGit.KnownHosts">
+		<item value="git.eclipse.org"/>
+		<item value="bitbucket.org"/>
+		<item value="github.com"/>
+	</list>
+	<section name="GitImportWizard">
+		<item key="GitProjectsImportPage.STORE_NESTED_PROJECTS" value="true"/>
+		<section name="GitImportWizard.dialogBounds">
+			<item key="DIALOG_X_ORIGIN" value="417"/>
+			<item key="DIALOG_Y_ORIGIN" value="138"/>
+			<item key="DIALOG_WIDTH" value="679"/>
+			<item key="DIALOG_HEIGHT" value="567"/>
+			<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|13.0|0|COCOA|1|.AppleSystemUIFont"/>
+		</section>
+	</section>
+</section>
